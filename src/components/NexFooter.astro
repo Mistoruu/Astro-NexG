@@ -1,0 +1,88 @@
+---
+
+---
+
+<footer>
+	<div class="footer-container">
+		<div class="footer-sub-container">
+			<ul>
+				<li><a href="#">À PROPOS</a></li>
+				<li><a href="#">POLITIQUE DE CONFIDENTIALITÉ</a></li>
+				<li><a href="#">CONDITIONS D'UTILISATION</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">COOKIES</a></li>
+				<li><a href="#">PROGRAMME D'AFFILIATION</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">OBTENIR DE L'AIDE</a></li>
+				<li><a href="#">ENREGISTREMENT ET GARANTIE</a></li>
+				<li><a href="#">POLITIQUE DE RETOUR</a></li>
+			</ul>
+		</div>
+		<p>Suivez-nous</p>
+		<div class="footer-socials">
+			<a href="#"><img src="/Assets/ico-discord.png" alt="discord" /></a>
+			<a href="#"><img src="/Assets/ico-twitter.png" alt="twitter" /></a>
+			<a href="#"><img src="/Assets/ico-instagram.png" alt="instagram" /></a>
+			<a href="#"><img src="/Assets/ico-youtube.png" alt="youtube" /></a>
+		</div>
+		<p class="copyright">©NexG Equipement. Tout droits reservés</p>
+	</div>
+</footer>
+
+<style lang="scss">
+	@use "../styles/config.scss" as cfg;
+	footer {
+		display: flex;
+		justify-content: center;
+		background-color: cfg.$background-footer;
+
+		& .footer-container {
+			display: flex;
+			flex-direction: column;
+			width: 1200px;
+			padding-top: 100px;
+
+			& .footer-sub-container {
+				display: flex;
+				gap: 50px;
+				& ul {
+					display: flex;
+					flex-direction: column;
+					gap: 5px;
+				}
+				& ul li a {
+					color: #c0c0c0;
+					text-decoration: none;
+					font-weight: 500;
+					transition: color 0.3s;
+				}
+				& ul li::marker {
+					content: none;
+				}
+				& ul li a:hover {
+					color: white;
+				}
+			}
+			& p {
+				color: white;
+				font-size: 1.2rem;
+				font-weight: 600;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			& .footer-socials {
+				& a img {
+					max-width: 36px;
+				}
+			}
+			& p.copyright {
+				font-size: 1rem;
+				color: cfg.$footer-secondary;
+				margin-top: 50px;
+			}
+		}
+	}
+</style>

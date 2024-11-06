@@ -1,0 +1,65 @@
+---
+
+---
+
+<header>
+	<div class="header-container">
+		<a href="#" class="header-logo"
+			><img src="/Assets/logo.png" class="logo" /></a
+		>
+		<nav>
+			<ul>
+				<li><a href="#">Nos produits</a></li>
+				<li><a href="#">Logiciel</a></li>
+				<li><a href="#">Communauté</a></li>
+				<li><a href="#">Assistance</a></li>
+			</ul>
+		</nav>
+		<div class="header-menu">
+			<img src="/Assets/user-lang.png" alt="lang" />
+			<img src="/Assets/user-icon.png" alt="account" />
+			<img src="/Assets/user-cart.png" alt="cart" />
+		</div>
+	</div>
+</header>
+<style lang="scss">
+	@use "../styles/config.scss" as cfg;
+	header {
+		background-color: cfg.$background-header;
+		box-shadow: 0 2px 6px #00000029;
+	}
+	.header-container {
+		margin: auto;
+		max-width: 1200px;
+		display: flex;
+		justify-content: space-between;
+		& .logo {
+			max-height: 48px;
+		}
+		& nav ul {
+			display: flex;
+			justify-content: center;
+			& li {
+				text-decoration: none;
+				content: "";
+				margin: 25px;
+				font-size: 1rem;
+				font-weight: bold;
+			}
+			& a {
+				color: black;
+				text-decoration: none;
+			}
+		}
+		& nav ul li::marker {
+			content: none;
+		}
+		& .header-menu {
+			& img {
+				height: 32px;
+				width: 32px;
+				margin: 15px;
+			}
+		}
+	}
+</style>

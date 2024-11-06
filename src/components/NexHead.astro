@@ -1,0 +1,43 @@
+---
+interface Props {
+	language?: string;
+	title?: string;
+}
+const { language = "fr", title = "NexGaming | Performance et Innovation" } =
+	Astro.props;
+---
+
+<head>
+	<!-- Technical Metadata -->
+	<meta charset="UTF-8" />
+	<meta hhtp-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta
+		name="generator"
+		content="Website made by Eliott Maillé with the Astro Framework (HTML, SCSS, Typescript)"
+	/>
+
+	<!--General Metadata -->
+	<meta name="author" content="Eliott Maillé" />
+	<meta
+		name="description"
+		content="NexG Equiment is the futur of gaming equipement"
+	/>
+	<meta name="og:type" content="website" />
+	<meta name="" />
+	<meta name="" />
+
+	<!--Socials Metada -->
+	<meta name="linkedin" content="https://www.linkedin.com/in/eliott-maille/" />
+	<meta name="github" content="https://github.com/Mistoruu" />
+	<!--Imports -->
+	<link rel="icon" href="/EM_favico.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet"
+	/>
+
+	<title>{title}</title>
+</head>

@@ -1,0 +1,26 @@
+---
+interface Props {
+	language?: string;
+	title?: string;
+}
+
+const { language = "en", title = "Test Website" } = Astro.props;
+
+import NexHead from "../components/NexHead.astro";
+import NexHeader from "../components/NexHeader.astro";
+import NexFooter from "../components/NexFooter.astro";
+import "../styles/config.scss";
+import "../styles/nex.scss";
+---
+
+<!-- HTML 5 --><!doctype html>
+<html lang={language}>
+	<NexHead />
+	<body>
+		<!-- HEADER -->
+		<NexHeader />
+		<slot />
+		<!--FOOTER -->
+		<NexFooter />
+	</body>
+</html>

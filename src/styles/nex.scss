@@ -1,0 +1,17 @@
+@use "config" as cfg;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: cfg.$background-body;
+}
